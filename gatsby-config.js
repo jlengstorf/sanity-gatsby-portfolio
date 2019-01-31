@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -13,8 +15,7 @@ module.exports = {
         dataset: 'production',
         overlayDrafts: true,
         watchMode: true,
-        token:
-          'skiswe9tOVTFhJFEOZRmvb5QhVWLxiXQDUKUarZdFkPwDCP8lwgVquFrmOruQcSuIeG18xTKjfUDtk8NrcQIeZJUI8pyd9cJFuap1GNZMH0F2fJq1t8RaDj2SfWo7Zgj0Tdg7cMKoEOztsifxDponVrI0kxmaKLYpMS9t3VY0UJ0Fszjf024'
+        token: process.env.SANITY_TOKEN
       }
     },
     {
